@@ -1,4 +1,5 @@
 import React from 'react';
+import ExcelRelatorio from './ExcelRelatorio';
 
 export default function TabelaRelatorio() {
   const dados = [
@@ -26,6 +27,9 @@ export default function TabelaRelatorio() {
           ))}
         </tbody>
       </table>
+
+      {/* Botão de exportação */}
+      <ExcelRelatorio dados={dados} />
     </div>
   );
 }
